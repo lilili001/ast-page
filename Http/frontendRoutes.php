@@ -9,6 +9,11 @@ if (! App::runningInConsole()) {
         'as' => 'homepage',
         'middleware' => config('asgard.page.config.middleware'),
     ]);
+    $router->post('bdtrans',[
+        'uses' => 'TransController@trans',
+        'as' => 'bdtrans',
+        'middleware' => 'logged.in'
+    ]);
     $router->any('{uri}', [
         'uses' => 'PublicController@uri',
         'as' => 'page',
