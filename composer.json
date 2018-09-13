@@ -1,5 +1,5 @@
 {
-  "name": "idavoll/page-module",
+  "name": "ast/page-module",
   "type": "asgard-module",
   "description": "Page module for AsgardCMS. Page management.",
   "keywords": [
@@ -9,15 +9,13 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Nicolas Widart",
-      "email": "info@asgardcms.com",
+      "name": "Miya Yeh",
+      "email": "miyaye3344@gmail.com",
       "role": "Developer"
     }
   ],
   "support": {
-    "email": "support@asgardcms.com",
-    "issues": "https://github.com/AsgardCms/Page/issues",
-    "source": "https://github.com/AsgardCms/Page"
+    "email": "miyaye3344@gmail.com",
   },
   "require": {
     "php": ">=7.0.0",
