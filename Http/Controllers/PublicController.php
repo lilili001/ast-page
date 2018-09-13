@@ -49,6 +49,7 @@ class PublicController extends BasePublicController
         $alternate = $this->getAlternateMetaData($page);
 
         return view($template, compact('page', 'alternate'));
+
     }
 
     /**
@@ -65,6 +66,7 @@ class PublicController extends BasePublicController
         $alternate = $this->getAlternateMetaData($page);
 
         return view($template, compact('page', 'alternate'));
+
     }
 
     /**
@@ -97,10 +99,12 @@ class PublicController extends BasePublicController
 
     /**
      * Throw a 404 error page if the given page is not found or draft
+
      * @param $page
      */
     private function throw404IfNotFound($page)
     {
+ 
         if (null === $page || $page->status === $this->disabledPage) {
             $this->app->abort('404');
         }
@@ -124,4 +128,5 @@ class PublicController extends BasePublicController
 
         return $alternate;
     }
+
 }
