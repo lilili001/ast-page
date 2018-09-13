@@ -1,7 +1,7 @@
 {
   "name": "ast/page-module",
   "type": "asgard-module",
-  "description": "Page module for AsgardCMS. Page management.",
+  "description": "",
   "keywords": [
     "asgardcms",
     "pages"
